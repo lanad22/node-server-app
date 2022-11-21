@@ -28,9 +28,9 @@ const updateTuit = (req, res) => {
     res.sendStatus(200);
 }
 const deleteTuit = (req, res) => {
-    const tuitdIdToDelete = (Number)(req.params.tid);
+    const tuitdIdToDelete = (req.params.tid);
     tuits = tuits.filter((t) =>
-        t._id !== tuitdIdToDelete);
+        t._id.toString() !== tuitdIdToDelete);
     res.sendStatus(200);
 }
 
