@@ -1,4 +1,4 @@
-import * as tuitsDao from './tuits-dao.js'
+import * as tuitsDao from './tuits-dao.jsheroku ps:scale web=1'
 
 const createTuit = async (req, res) => {
     const newTuit = req.body;
